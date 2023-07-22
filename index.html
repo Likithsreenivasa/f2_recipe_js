@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Catalogue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Catalogue</h1>
+        <div id="search-container">
+            <input type="text" id="search" placeholder="Search recipes...">
+        </div>
+    </header>
+
+    <div id="filter-container">
+        <div>
+            <button id="showAll">Show All</button>
+            <button id="showVeg">Show Only Veg</button>
+            <button id="showNonVeg">Show Only Non-Veg</button>
+        </div>
+        <div>
+            <label>
+                <input type="radio" name="ratingFilter" id="ratingAbove4_5" value="4.5">
+                Rating Above 4.5
+            </label>
+            <label>
+                <input type="radio" name="ratingFilter" id="ratingBelow4_0" value="4.0">
+                Rating Below 4.0
+            </label>
+        </div>
+    </div>
+
+    <div id="recipe-container">
+        <!-- Recipe cards will be dynamically added here -->
+    </div>
+
+    <div id="mobileMenuButton">&#9776;</div>
+    <div id="mobileMenuDrawer">
+        <button id="showAllMobile">Show All</button>
+        <button id="showVegMobile">Show Only Veg</button>
+        <button id="showNonVegMobile">Show Only Non-Veg</button>
+        <label>
+            <input type="radio" name="ratingFilterMobile" id="ratingAbove4_5Mobile" value="4.5">
+            Rating Above 4.5
+        </label>
+        <label>
+            <input type="radio" name="ratingFilterMobile" id="ratingBelow4_0Mobile" value="4.0">
+            Rating Below 4.0
+        </label>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
